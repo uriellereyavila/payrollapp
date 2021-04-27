@@ -1,0 +1,11 @@
+C:\Users\REY\source\repos\payrollapp\payrollapp\bin\Debug\netcoreapp2.0\payrollapp.deps.json
+C:\Users\REY\source\repos\payrollapp\payrollapp\bin\Debug\netcoreapp2.0\payrollapp.runtimeconfig.json
+C:\Users\REY\source\repos\payrollapp\payrollapp\bin\Debug\netcoreapp2.0\payrollapp.runtimeconfig.dev.json
+C:\Users\REY\source\repos\payrollapp\payrollapp\bin\Debug\netcoreapp2.0\payrollapp.dll
+C:\Users\REY\source\repos\payrollapp\payrollapp\bin\Debug\netcoreapp2.0\payrollapp.pdb
+C:\Users\REY\source\repos\payrollapp\payrollapp\obj\Debug\netcoreapp2.0\payrollapp.csproj.CoreCompileInputs.cache
+C:\Users\REY\source\repos\payrollapp\payrollapp\obj\Debug\netcoreapp2.0\payrollapp.AssemblyInfoInputs.cache
+C:\Users\REY\source\repos\payrollapp\payrollapp\obj\Debug\netcoreapp2.0\payrollapp.AssemblyInfo.cs
+C:\Users\REY\source\repos\payrollapp\payrollapp\obj\Debug\netcoreapp2.0\payrollapp.dll
+C:\Users\REY\source\repos\payrollapp\payrollapp\obj\Debug\netcoreapp2.0\payrollapp.pdb
+C:\Users\REY\source\repos\payrollapp\payrollapp\obj\Debug\netcoreapp2.0\payrollapp.csprojResolveAssemblyReference.cache

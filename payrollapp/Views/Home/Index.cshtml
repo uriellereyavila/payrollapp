@@ -1,0 +1,93 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+    @model EmployeeModel;
+
+}
+
+<h4>Employee List</h4>
+
+<button class="btn btn-success mt-2" id="btnAddEmployee">Add Employee</button>
+<div class="container mt-4">
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Name</th>
+                <th scope="col">Birthdate</th>
+                <th scope="col">TIN</th>
+                <th scope="col">Employee Type</th>
+                <th scope="col">Action(s)</th>
+            </tr>
+        </thead>
+        <tbody>
+
+            @{ if (ViewBag.EmployeeList != null)
+                {
+                    foreach (var employee in ViewBag.EmployeeList)
+                    {
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>@employee.Name</td>
+                            <td>@employee.Birthdate</td>
+                            <td>@employee.TIN</td>
+                            <td>@employee.EmployeeType</td>
+                            <td><button class="btn btn-primary">Add MDFKR</button></td>
+                        </tr>
+                    }
+                }
+                else
+                {
+                    <tr>
+                        <td colspan="6">No Data Found</td>
+                    </tr>
+                }
+            }
+        </tbody>
+    </table>
+</div>
+
+<div class="modal fade" tabindex="-1" id="mdlAddEmployee">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Add Employee</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="m-3">
+                    @using (var form = Html.BeginForm("AddEmployee", "Home", FormMethod.Post))
+                    {
+                        <div class="form-group">
+                            <label for="txtName">Employee Name</label>
+                            @Html.TextBoxFor(model => model.Name, new { @class = "form-control", @id = "txtName", @required = "true" })
+                        </div>
+                        <div class="form-group">
+                            <label for="txtName">Birhtdate</label>
+                            @Html.TextBoxFor(model => model.Birthdate, new { @class = "form-control", @type = "date", @required = "true" })
+                        </div>
+                        <div class="form-group">
+                            <label for="txtName">TIN</label>
+                            @Html.TextBoxFor(model => model.TIN, new { @class = "form-control", @required = "true" })
+                        </div>
+                        <div class="form-group">
+                            <label for="txtName">Employee Type</label>
+                            @Html.DropDownListFor(model => model.EmployeeType, new SelectList(Enum.GetValues(typeof(EmployeeType))), "Select Employee Type", new { @class = "form-control", @required = "true" })
+                        </div>
+                        <div class="input-group-append">
+                            <button type="submit" class="btn btn-success">Save Changes</button>
+                        </div>
+                    }
+                </div>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
