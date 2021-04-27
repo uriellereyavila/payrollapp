@@ -1,7 +1,7 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
-    @model EmployeeModel;
 
+    @model EmployeeModel;
 }
 
 <h4>Employee List</h4>
@@ -11,7 +11,6 @@
     <table class="table table-striped">
         <thead>
             <tr>
-                <th scope="col">#</th>
                 <th scope="col">Name</th>
                 <th scope="col">Birthdate</th>
                 <th scope="col">TIN</th>
@@ -21,17 +20,18 @@
         </thead>
         <tbody>
 
-            @{ if (ViewBag.EmployeeList != null)
+            @{
+                if (ViewBag.EmployeeList != null)
                 {
-                    foreach (var employee in ViewBag.EmployeeList)
+                    //foreach (var employee in ViewBag.EmployeeList)
+                    foreach (var employee in ViewData["EmployeeList"] as List<EmployeeModel>)
                     {
                         <tr>
-                            <th scope="row">1</th>
                             <td>@employee.Name</td>
                             <td>@employee.Birthdate</td>
                             <td>@employee.TIN</td>
                             <td>@employee.EmployeeType</td>
-                            <td><button class="btn btn-primary">Add MDFKR</button></td>
+                            <td><button class="btn btn-primary">Details</button></td>
                         </tr>
                     }
                 }

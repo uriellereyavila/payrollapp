@@ -27,7 +27,7 @@ namespace payrollapp.Models
         /// </summary>
         public EmployeeType EmployeeType { get; set; }
 
-        public List<EmployeeModel> EmployeeList { get; set; }
+        //public List<EmployeeModel> EmployeeList { get; set; }
 
 
     }

@@ -12,22 +12,36 @@ namespace payrollapp.Controllers
 {
     public class HomeController : Controller
     {
-        private Employee _employee = new Employee();
+        /// <summary>
+        /// instantiate static business logic employee class
+        /// </summary>
+        //private static Employee _employee = new Employee();
+        static List<EmployeeModel> EmployeeList = new List<EmployeeModel>();
 
+        /// <summary>
+        /// return index view
+        /// </summary>
+        /// <returns></returns>
         public IActionResult Index()
         {
             ViewBag.EmployeeList = null;
-
+            ViewBag.EmployeeId = 0;
             return View();
         }
 
+        /// <summary>
+        /// returns View
+        /// </summary>
+        /// <param name="employee"></param>
+        /// <returns></returns>
         [HttpPost]
         public IActionResult AddEmployee(EmployeeModel employee)
         {
-            ViewBag.EmployeeList = _employee.AddEmployee(employee);
-            //ViewBag.EmployeeList.Add(employee);
-            //.EmployeeList.Add(employee);
-            return View("Home");
+            EmployeeList.Add(employee);
+            ViewBag.EmployeeList = EmployeeList;
+            //ViewBag.EmployeeList = _employee.AddEmployee(employee);
+            //ViewData["EmployeeList"] = _employee.AddEmployee(employee);
+            return View("~/home/index");
         }
     }
 }

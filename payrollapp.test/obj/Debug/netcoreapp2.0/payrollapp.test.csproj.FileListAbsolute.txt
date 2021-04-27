@@ -1,0 +1,15 @@
+E:\Projects\.NET\payrollapp\payrollapp.test\bin\Debug\netcoreapp2.0\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+E:\Projects\.NET\payrollapp\payrollapp.test\bin\Debug\netcoreapp2.0\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+E:\Projects\.NET\payrollapp\payrollapp.test\bin\Debug\netcoreapp2.0\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+E:\Projects\.NET\payrollapp\payrollapp.test\bin\Debug\netcoreapp2.0\payrollapp.test.deps.json
+E:\Projects\.NET\payrollapp\payrollapp.test\bin\Debug\netcoreapp2.0\payrollapp.test.runtimeconfig.json
+E:\Projects\.NET\payrollapp\payrollapp.test\bin\Debug\netcoreapp2.0\payrollapp.test.runtimeconfig.dev.json
+E:\Projects\.NET\payrollapp\payrollapp.test\bin\Debug\netcoreapp2.0\payrollapp.test.dll
+E:\Projects\.NET\payrollapp\payrollapp.test\bin\Debug\netcoreapp2.0\payrollapp.test.pdb
+E:\Projects\.NET\payrollapp\payrollapp.test\obj\Debug\netcoreapp2.0\payrollapp.test.csprojAssemblyReference.cache
+E:\Projects\.NET\payrollapp\payrollapp.test\obj\Debug\netcoreapp2.0\payrollapp.test.AssemblyInfoInputs.cache
+E:\Projects\.NET\payrollapp\payrollapp.test\obj\Debug\netcoreapp2.0\payrollapp.test.AssemblyInfo.cs
+E:\Projects\.NET\payrollapp\payrollapp.test\obj\Debug\netcoreapp2.0\payrollapp.test.csproj.CoreCompileInputs.cache
+E:\Projects\.NET\payrollapp\payrollapp.test\obj\Debug\netcoreapp2.0\payrollapp.test.dll
+E:\Projects\.NET\payrollapp\payrollapp.test\obj\Debug\netcoreapp2.0\payrollapp.test.pdb
+E:\Projects\.NET\payrollapp\payrollapp.test\obj\Debug\netcoreapp2.0\payrollapp.test.genruntimeconfig.cache

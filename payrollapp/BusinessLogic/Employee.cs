@@ -8,14 +8,12 @@ namespace payrollapp.BusinessLogic
 {
     public class Employee
     {
-        List<EmployeeModel> EmployeeList = new List<EmployeeModel>();
-
-
+        private List<EmployeeModel> _employeeList = new List<EmployeeModel>();
         public List<EmployeeModel> AddEmployee(EmployeeModel employee)
         {
-            EmployeeList.Add(employee);
+            _employeeList.Add(employee);
 
-            return EmployeeList;
+            return _employeeList;
         }
 
         //public double GetMonthlySaray(string employeeType)
