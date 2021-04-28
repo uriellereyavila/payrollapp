@@ -5,6 +5,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Models\EmployeeViewModel.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Content Remove="wwwroot\lib\bootstrap\dist\css\bootstrap-theme.css.map" />
     <Content Remove="wwwroot\lib\bootstrap\dist\css\bootstrap-theme.min.css" />
     <Content Remove="wwwroot\lib\bootstrap\dist\css\bootstrap-theme.min.css.map" />

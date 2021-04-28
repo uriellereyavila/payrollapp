@@ -15,8 +15,8 @@ namespace payrollapp.Controllers
         /// <summary>
         /// instantiate static business logic employee class
         /// </summary>
-        //private static Employee _employee = new Employee();
-        static List<EmployeeModel> EmployeeList = new List<EmployeeModel>();
+        private static Employee _employee = new Employee();
+        //static List<EmployeeModel> EmployeeList = new List<EmployeeModel>();
 
         /// <summary>
         /// return index view
@@ -24,7 +24,7 @@ namespace payrollapp.Controllers
         /// <returns></returns>
         public IActionResult Index()
         {
-            ViewBag.EmployeeList = null;
+            ViewBag.EmployeeList = _employee.GetEmployee();
             ViewBag.EmployeeId = 0;
             return View();
         }
@@ -37,11 +37,20 @@ namespace payrollapp.Controllers
         [HttpPost]
         public IActionResult AddEmployee(EmployeeModel employee)
         {
-            EmployeeList.Add(employee);
-            ViewBag.EmployeeList = EmployeeList;
-            //ViewBag.EmployeeList = _employee.AddEmployee(employee);
-            //ViewData["EmployeeList"] = _employee.AddEmployee(employee);
-            return View("~/home/index");
+            ViewBag.EmployeeList = _employee.AddEmployee(employee);
+
+            return RedirectToAction("Index");
+        }
+
+        [HttpPost]
+        public object GetEmployeeInfo(string employeeType, double numOfDays)
+        {
+            //initialize employee bus. logic
+            Employee employee = new Employee();
+
+            employee.GetEmployeeInfo(employeeType, numOfDays);
+
+            return employee;
         }
     }
 }

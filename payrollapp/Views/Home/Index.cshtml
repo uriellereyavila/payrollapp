@@ -6,7 +6,7 @@
 
 <h4>Employee List</h4>
 
-<button class="btn btn-success mt-2" id="btnAddEmployee">Add Employee</button>
+<button class="btn btn-success mt-2" id="btnAddEmployee" data-toggle="modal" data-target="#mdlAddEmployee">Add Employee</button>
 <div class="container mt-4">
     <table class="table table-striped">
         <thead>
@@ -15,7 +15,7 @@
                 <th scope="col">Birthdate</th>
                 <th scope="col">TIN</th>
                 <th scope="col">Employee Type</th>
-                <th scope="col">Action(s)</th>
+                @*<th scope="col">Action(s)</th>*@
             </tr>
         </thead>
         <tbody>
@@ -26,12 +26,12 @@
                     //foreach (var employee in ViewBag.EmployeeList)
                     foreach (var employee in ViewData["EmployeeList"] as List<EmployeeModel>)
                     {
-                        <tr>
+                        <tr id="rwViewEmployeeDetails" style="cursor: pointer">
                             <td>@employee.Name</td>
-                            <td>@employee.Birthdate</td>
+                            <td>@employee.Birthdate.ToShortDateString()</td>
                             <td>@employee.TIN</td>
                             <td>@employee.EmployeeType</td>
-                            <td><button class="btn btn-primary">Details</button></td>
+                            @*<td><button class="btn btn-primary btn-view-details" id="btnEmployeeDetails">Details</button></td>*@
                         </tr>
                     }
                 }
@@ -50,7 +50,7 @@
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title">Add Employee</h5>
+                <h5 class="modal-title">Employee Details</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -64,28 +64,68 @@
                             @Html.TextBoxFor(model => model.Name, new { @class = "form-control", @id = "txtName", @required = "true" })
                         </div>
                         <div class="form-group">
-                            <label for="txtName">Birhtdate</label>
-                            @Html.TextBoxFor(model => model.Birthdate, new { @class = "form-control", @type = "date", @required = "true" })
+                            <label for="txtDate">Birhtdate</label>
+                            @Html.TextBoxFor(model => model.Birthdate, new { @class = "form-control", @type = "date", @required = "true", @id = "txtDate" })
                         </div>
                         <div class="form-group">
-                            <label for="txtName">TIN</label>
-                            @Html.TextBoxFor(model => model.TIN, new { @class = "form-control", @required = "true" })
+                            <label for="txtTIN">TIN</label>
+                            @Html.TextBoxFor(model => model.TIN, new { @class = "form-control", @required = "true", @id = "txtTIN" })
                         </div>
                         <div class="form-group">
-                            <label for="txtName">Employee Type</label>
+                            <label for="">Employee Type</label>
                             @Html.DropDownListFor(model => model.EmployeeType, new SelectList(Enum.GetValues(typeof(EmployeeType))), "Select Employee Type", new { @class = "form-control", @required = "true" })
                         </div>
-                        <div class="input-group-append">
-                            <button type="submit" class="btn btn-success">Save Changes</button>
+                        <div class="d-flex justify-content-end">
+                            <button type="reset" class="btn btn-primary mr-auto">Clear</button>
+                            <button type="submit" class="btn btn-success mx-1">Save Changes</button>
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                         </div>
                     }
                 </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" tabindex="-1" id="mdlViewEmployee">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Employee Details</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="m-3">
+                    <div class="form-group">
+                        <p>Employee Name</p>
+                        <label class="form-control h5" id="lblName"></label>
+                    </div>
+                    <div class="form-group">
+                        <p for="">Birhtdate</p>
+                        <label class="form-control h5" id="lblBirthdate"></label>
+                    </div>
+                    <div class="form-group">
+                        <p for="">TIN</p>
+                        <label class="form-control h5" id="lblTIN"></label>
+                    </div>
+                    <div class="form-group">
+                        <label for="">Employee Type</label>
+                        <label class="form-control h5" id="lblEmployeeType"></label>
+                    </div>
+                    <div class="form-group">
+                        <label for="">Number of </label>
+                        <input class="form-control" type="number" />
+                    </div>
+
+                </div>
 
             </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
-            </div>
+            @*<div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>*@
         </div>
     </div>
 </div>
