@@ -13,3 +13,10 @@ E:\Projects\.NET\payrollapp\payrollapp.test\obj\Debug\netcoreapp2.0\payrollapp.t
 E:\Projects\.NET\payrollapp\payrollapp.test\obj\Debug\netcoreapp2.0\payrollapp.test.dll
 E:\Projects\.NET\payrollapp\payrollapp.test\obj\Debug\netcoreapp2.0\payrollapp.test.pdb
 E:\Projects\.NET\payrollapp\payrollapp.test\obj\Debug\netcoreapp2.0\payrollapp.test.genruntimeconfig.cache
+E:\Projects\.NET\payrollapp\payrollapp.test\bin\Debug\netcoreapp2.0\appsettings.Development.json
+E:\Projects\.NET\payrollapp\payrollapp.test\bin\Debug\netcoreapp2.0\appsettings.json
+E:\Projects\.NET\payrollapp\payrollapp.test\bin\Debug\netcoreapp2.0\bower.json
+E:\Projects\.NET\payrollapp\payrollapp.test\bin\Debug\netcoreapp2.0\bundleconfig.json
+E:\Projects\.NET\payrollapp\payrollapp.test\bin\Debug\netcoreapp2.0\payrollapp.dll
+E:\Projects\.NET\payrollapp\payrollapp.test\bin\Debug\netcoreapp2.0\payrollapp.pdb
+E:\Projects\.NET\payrollapp\payrollapp.test\obj\Debug\netcoreapp2.0\payrollapp.test.csproj.CopyComplete

@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace payrollapp.Models
 {
-    public class EmployeeModel
+    public class EmployeeModel  
     {
         /// <summary>
         /// gets or sets employee name
@@ -28,11 +28,14 @@ namespace payrollapp.Models
         public EmployeeType EmployeeType { get; set; }
 
         /// <summary>
-        /// get or set
+        /// gets or sets employee contractual info
         /// </summary>
-        public ContractualEmployeeModel ContractualEmployee { get; set; }
+        public ContractualEmployeeModel EmpContractualInfo { get; set; }
 
-        public RegularEmployeeModel RegularEmployee { get; set; }
+        /// <summary>
+        /// gets or sets employee regular info
+        /// </summary>
+        public RegularEmployeeModel EmpRegularInfo { get; set; }
     }
 
 }

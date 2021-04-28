@@ -10,7 +10,7 @@
         /// <summary>
         /// gets or sets employee absent
         /// </summary>
-        public double Absent { get; set; } = 0;
+        public double TotalAbsent { get; set; } = 0;
 
         /// <summary>
         /// gets or sets employee working days

@@ -9,6 +9,17 @@ C:\Users\REY\source\repos\payrollapp\payrollapp\obj\Debug\netcoreapp2.0\payrolla
 C:\Users\REY\source\repos\payrollapp\payrollapp\obj\Debug\netcoreapp2.0\payrollapp.dll
 C:\Users\REY\source\repos\payrollapp\payrollapp\obj\Debug\netcoreapp2.0\payrollapp.pdb
 C:\Users\REY\source\repos\payrollapp\payrollapp\obj\Debug\netcoreapp2.0\payrollapp.csprojResolveAssemblyReference.cache
+E:\.Net projects\payrollapp\payrollapp\bin\Debug\netcoreapp2.0\payrollapp.deps.json
+E:\.Net projects\payrollapp\payrollapp\bin\Debug\netcoreapp2.0\payrollapp.runtimeconfig.json
+E:\.Net projects\payrollapp\payrollapp\bin\Debug\netcoreapp2.0\payrollapp.runtimeconfig.dev.json
+E:\.Net projects\payrollapp\payrollapp\bin\Debug\netcoreapp2.0\payrollapp.dll
+E:\.Net projects\payrollapp\payrollapp\bin\Debug\netcoreapp2.0\payrollapp.pdb
+E:\.Net projects\payrollapp\payrollapp\obj\Debug\netcoreapp2.0\payrollapp.csprojResolveAssemblyReference.cache
+E:\.Net projects\payrollapp\payrollapp\obj\Debug\netcoreapp2.0\payrollapp.csproj.CoreCompileInputs.cache
+E:\.Net projects\payrollapp\payrollapp\obj\Debug\netcoreapp2.0\payrollapp.AssemblyInfoInputs.cache
+E:\.Net projects\payrollapp\payrollapp\obj\Debug\netcoreapp2.0\payrollapp.AssemblyInfo.cs
+E:\.Net projects\payrollapp\payrollapp\obj\Debug\netcoreapp2.0\payrollapp.dll
+E:\.Net projects\payrollapp\payrollapp\obj\Debug\netcoreapp2.0\payrollapp.pdb
 E:\Projects\.NET\payrollapp\payrollapp\bin\Debug\netcoreapp2.0\appsettings.Development.json
 E:\Projects\.NET\payrollapp\payrollapp\bin\Debug\netcoreapp2.0\appsettings.json
 E:\Projects\.NET\payrollapp\payrollapp\bin\Debug\netcoreapp2.0\bower.json
@@ -25,14 +36,3 @@ E:\Projects\.NET\payrollapp\payrollapp\obj\Debug\netcoreapp2.0\payrollapp.csproj
 E:\Projects\.NET\payrollapp\payrollapp\obj\Debug\netcoreapp2.0\payrollapp.dll
 E:\Projects\.NET\payrollapp\payrollapp\obj\Debug\netcoreapp2.0\payrollapp.pdb
 E:\Projects\.NET\payrollapp\payrollapp\obj\Debug\netcoreapp2.0\payrollapp.genruntimeconfig.cache
-E:\.Net projects\payrollapp\payrollapp\bin\Debug\netcoreapp2.0\payrollapp.deps.json
-E:\.Net projects\payrollapp\payrollapp\bin\Debug\netcoreapp2.0\payrollapp.runtimeconfig.json
-E:\.Net projects\payrollapp\payrollapp\bin\Debug\netcoreapp2.0\payrollapp.runtimeconfig.dev.json
-E:\.Net projects\payrollapp\payrollapp\bin\Debug\netcoreapp2.0\payrollapp.dll
-E:\.Net projects\payrollapp\payrollapp\bin\Debug\netcoreapp2.0\payrollapp.pdb
-E:\.Net projects\payrollapp\payrollapp\obj\Debug\netcoreapp2.0\payrollapp.csprojResolveAssemblyReference.cache
-E:\.Net projects\payrollapp\payrollapp\obj\Debug\netcoreapp2.0\payrollapp.csproj.CoreCompileInputs.cache
-E:\.Net projects\payrollapp\payrollapp\obj\Debug\netcoreapp2.0\payrollapp.AssemblyInfoInputs.cache
-E:\.Net projects\payrollapp\payrollapp\obj\Debug\netcoreapp2.0\payrollapp.AssemblyInfo.cs
-E:\.Net projects\payrollapp\payrollapp\obj\Debug\netcoreapp2.0\payrollapp.dll
-E:\.Net projects\payrollapp\payrollapp\obj\Debug\netcoreapp2.0\payrollapp.pdb

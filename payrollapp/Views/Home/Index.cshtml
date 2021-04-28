@@ -21,17 +21,16 @@
         <tbody>
 
             @{
-                if (ViewBag.EmployeeList != null)
+                if (ViewBag.EmployeeList.Count != 0)
                 {
                     //foreach (var employee in ViewBag.EmployeeList)
-                    foreach (var employee in ViewData["EmployeeList"] as List<EmployeeModel>)
+                    foreach (var employee in ViewBag.EmployeeList)
                     {
-                        <tr id="rwViewEmployeeDetails" style="cursor: pointer">
+                        <tr class="rwViewEmployeeDetails" id="rwViewEmployeeDetails" style="cursor: pointer">
                             <td>@employee.Name</td>
                             <td>@employee.Birthdate.ToShortDateString()</td>
                             <td>@employee.TIN</td>
                             <td>@employee.EmployeeType</td>
-                            @*<td><button class="btn btn-primary btn-view-details" id="btnEmployeeDetails">Details</button></td>*@
                         </tr>
                     }
                 }
@@ -99,33 +98,38 @@
             <div class="modal-body">
                 <div class="m-3">
                     <div class="form-group">
-                        <p>Employee Name</p>
-                        <label class="form-control h5" id="lblName"></label>
+                        <p class="my-2">Employee Name</p>
+                        <label class="h5 font-weight-bold" id="lblName"></label>
                     </div>
                     <div class="form-group">
-                        <p for="">Birhtdate</p>
-                        <label class="form-control h5" id="lblBirthdate"></label>
+                        <p class="my-2" for="">Birhtdate</p>
+                        <label class="h5 font-weight-bold" id="lblBirthdate"></label>
                     </div>
                     <div class="form-group">
-                        <p for="">TIN</p>
-                        <label class="form-control h5" id="lblTIN"></label>
+                        <p class="my-2" for="">TIN</p>
+                        <label class="h5 font-weight-bold" id="lblTIN"></label>
                     </div>
                     <div class="form-group">
-                        <label for="">Employee Type</label>
-                        <label class="form-control h5" id="lblEmployeeType"></label>
+                        <p class="my-2" for="">Employee Type</p>
+                        <label class="h5 font-weight-bold" id="lblEmployeeType"></label>
+                    </div>
+                    <div class="form-group my-0">
+                        <label id="lblTotalDays"></label>
+                        <input class="form-control" type="text" id="txtTotalDays" />
+                    </div>
+                    <div class="form-group my-0">
+                        <small id="lblRequestIndicator">Calculating...</small>
                     </div>
                     <div class="form-group">
-                        <label for="">Number of </label>
-                        <input class="form-control" type="number" />
+                        <label class="h5" id="lblTotalSalary">Employee's Total Salary is ₱0.00</label>
                     </div>
 
                 </div>
 
             </div>
-            @*<div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
-                </div>*@
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
         </div>
     </div>
 </div>

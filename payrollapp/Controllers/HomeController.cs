@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using payrollapp.Models;
 using payrollapp.BusinessLogic;
 using System.Dynamic;
+using Newtonsoft.Json;
 
 namespace payrollapp.Controllers
 {
@@ -16,7 +17,11 @@ namespace payrollapp.Controllers
         /// instantiate static business logic employee class
         /// </summary>
         private static Employee _employee = new Employee();
-        //static List<EmployeeModel> EmployeeList = new List<EmployeeModel>();
+
+        /// <summary>
+        /// instantial response model 
+        /// </summary>
+        private ResponseModel _responseModel = new ResponseModel();
 
         /// <summary>
         /// return index view
@@ -25,7 +30,6 @@ namespace payrollapp.Controllers
         public IActionResult Index()
         {
             ViewBag.EmployeeList = _employee.GetEmployee();
-            ViewBag.EmployeeId = 0;
             return View();
         }
 
@@ -43,14 +47,13 @@ namespace payrollapp.Controllers
         }
 
         [HttpPost]
-        public object GetEmployeeInfo(string employeeType, double numOfDays)
+        public object GetEmployeeInfo(EmployeeModel employeeModel)
         {
             //initialize employee bus. logic
             Employee employee = new Employee();
+            this._responseModel = employee.GetEmployeeInfo(employeeModel);
 
-            employee.GetEmployeeInfo(employeeType, numOfDays);
-
-            return employee;
+            return JsonConvert.SerializeObject(this._responseModel, Formatting.None);
         }
     }
 }
